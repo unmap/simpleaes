@@ -1,5 +1,5 @@
 # simpleaes
-simple binary to hader file with aes encryption
+simple binary to header file with aes encryption
 
 # decrpytion
 use a decryption method like this after adding aes.c and aes.h to your project. <br>
