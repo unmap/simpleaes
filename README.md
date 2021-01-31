@@ -1,7 +1,7 @@
 # simpleaes
 simple binary to header file with aes encryption
 
-# decrpytion
+# decryption
 use a decryption method like this after adding aes.c and aes.h to your project. <br>
 the padding is listed at the top of the header file generated
 
