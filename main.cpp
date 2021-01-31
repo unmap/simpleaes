@@ -36,7 +36,7 @@ auto generate_header( const std::vector<std::uint8_t>& in_buffer , int padding )
 	return header;
 }
 
-inline void open_binary_file( const std::string& file , std::vector<uint8_t>& data )
+inline auto open_binary_file( const std::string& file , std::vector<uint8_t>& data ) -> void
 {
 	std::ifstream fstr( file , std::ios::binary );
 	fstr.unsetf( std::ios::skipws );
