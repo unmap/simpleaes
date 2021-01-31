@@ -5,7 +5,7 @@
 #include <vector>
 
 
-__forceinline std::pair <std::vector<std::uint8_t>, int> encrypt ( std::vector<std::uint8_t>& input , std::string_view aes_key_1, std::string_view aes_key_2 )
+__forceinline std::pair<std::vector<std::uint8_t>, int> encrypt ( std::vector<std::uint8_t>& input , std::string_view aes_key_1, std::string_view aes_key_2 )
 {
 	std::string raw( input.begin ( ) , input.end ( ) );
 	
