@@ -27,7 +27,6 @@ __forceinline std::vector<std::uint8_t> decrypt ( std::vector<std::uint8_t> inpu
 	AES_init_ctx_iv ( &ctx , reinterpret_cast<const uint8_t*>( aes_key_1.data(  ) ) , reinterpret_cast<const uint8_t*>( aes_key_2.data(  ) ) );
 	AES_CBC_decrypt_buffer ( &ctx , reinterpret_cast<uint8_t*>( data.data ( ) ) , data.size ( ) );
 
-
 	data.erase ( data.size ( ) - paddding );
 	return std::vector<std::uint8_t>{data.begin ( ) , data.end ( )};
 }
