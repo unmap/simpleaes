@@ -68,8 +68,7 @@ auto main( int argument_count , char** argument_array ) -> int
 	encrypted_file << enc_buffer_string;
 	encrypted_file.close( );
 
-	std::cout << "\n =========================================== AES TEST | padding: " << padding <<
-		" ===========================================" << std::endl;
+	std::cout << "\n =========================================== AES | padding: " << padding << " ===========================================" << std::endl;
 
 	auto bytes = decrypt( encypted , argument_array [ 1 ] , argument_array [ 2 ] , padding );
 
