@@ -35,5 +35,8 @@
     <ClInclude Include="aes\aes.hpp">
       <Filter>Header Files\aes</Filter>
     </ClInclude>
+    <ClInclude Include="file_utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
