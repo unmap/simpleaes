@@ -4,6 +4,12 @@
 #include <string>
 #include <vector>
 
+/**
+ * \brief function that takes buffer and formats it for output
+ * \param in_buffer encrypted buffer
+ * \param padding padding that will be given from decryption function
+ * \return std::string that will be used to put the file on disk
+ */
 __forceinline auto generate_header( const std::vector<std::uint8_t>& in_buffer , int padding ) -> std::string
 {
 	std::string header;
@@ -34,6 +40,11 @@ __forceinline auto generate_header( const std::vector<std::uint8_t>& in_buffer ,
 	return header;
 }
 
+/**
+ * \brief opens file on disk into std::vector<std::uint8_t>
+ * \param file path to file on disk
+ * \param data output std::vector<std::uint8_t>
+ */
 __forceinline auto open_binary_file( const std::string& file , std::vector<uint8_t>& data ) -> void
 {
 	std::ifstream fstr( file , std::ios::binary );
