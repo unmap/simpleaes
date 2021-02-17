@@ -77,6 +77,6 @@ auto main( int argument_count , char** argument_array ) -> int
 		return 0;
 	}
 
-	std::cout << "\ndone" << std::endl;
+	std::cout << "\n[+] Done!" << std::endl;
 	getchar( );
 }
